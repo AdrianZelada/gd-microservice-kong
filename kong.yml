@@ -1,0 +1,12 @@
+_format_version: "2.1"
+
+services:
+  - name: order
+    url: http://kitchen:4500/kitchen/getOrder
+    routes:
+      - name: order-route
+        methods:
+          - GET
+        paths:
+          - /getOrder
+        strip_path: true
