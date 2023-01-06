@@ -10,3 +10,21 @@ services:
         paths:
           - /getOrder
         strip_path: true
+  - name: recipes
+    url: http://kitchen:4500/kitchen/recipes
+    routes:
+      - name: list-recipes
+        methods:
+          - GET
+        paths:
+          - /recipes
+        strip_path: true
+  - name: orders
+    url: http://kitchen:4500/kitchen/orders
+    routes:
+      - name: list-orders
+        methods:
+          - GET
+        paths:
+          - /orders
+        strip_path: true      
